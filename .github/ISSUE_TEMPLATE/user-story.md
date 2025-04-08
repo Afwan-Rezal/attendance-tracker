@@ -1,13 +1,4 @@
 ---
-name: User Story
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
-assignees: ''
-
----
-
----
 name: 📖 User Story
 about: Create a user story to define a new feature or improvement
 title: "[User Story]: "
