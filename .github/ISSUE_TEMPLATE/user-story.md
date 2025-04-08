@@ -1,8 +1,8 @@
 ---
-name: 📖 User Story
+name: "\U0001F4D6 User Story"
 about: Create a user story to define a new feature or improvement
 title: "[User Story]: "
-labels: user-story
+labels: ''
 assignees: ''
 
 ---
