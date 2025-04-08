@@ -1,66 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Student Attendance Tracker
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Project Overview
+The **Student Attendance Tracker** is a web-based application designed to help educational institutions manage and track student attendance in real-time. This system allows instructors to generate QR codes tied to specific class sessions and modules. Students can then scan these codes to mark their attendance. The system ensures efficient, accurate, and automated attendance recording and management.
 
-## About Laravel
+## Key Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. **Student Registration and Login**
+   - Students can register and log in securely with their credentials.
+   - Authentication features include login, registration, and password recovery, powered by Laravel's built-in authentication system.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+2. **QR Code Generation for Classes**
+   - Instructors can generate unique QR codes for specific class sessions.
+   - QR codes are associated with session details, such as the module, the date of the session, and the specific class time.
+   - Students can scan these QR codes using their smartphones or computers to mark their attendance.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+3. **Attendance Tracking**
+   - The system records when students mark their attendance through scanning the QR code.
+   - Attendance is logged with session-specific data, ensuring accuracy.
+   - An attendance report is generated for each student and can be reviewed by both students and instructors.
 
-## Learning Laravel
+4. **Admin and Instructor Roles**
+   - Instructors and admins have different access levels to manage sessions, generate QR codes, and view attendance data.
+   - Admins can manage user accounts and oversee attendance data for all sessions.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+5. **Real-Time Data Storage**
+   - All attendance data is securely stored in a **PostgreSQL** database, allowing for efficient query and retrieval.
+   - Students' attendance is tracked over time, enabling detailed reports on attendance patterns, trends, and anomalies.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+6. **Module and Session Management**
+   - Instructors can create and manage different academic modules or sessions that they are teaching.
+   - Students can view their enrollment in modules and attend corresponding sessions.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+7. **Reports and Analytics**
+   - Generate detailed reports that can display attendance statistics, trends, and historical data.
+   - Both students and instructors can track attendance over time, enabling insights into student participation.
 
-## Laravel Sponsors
+8. **Responsive User Interface**
+   - The application has a clean and modern interface, ensuring ease of use for both students and instructors.
+   - The user interface is responsive, ensuring it works well across different devices, from desktops to mobile phones.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Technologies Used
 
-### Premium Partners
+- **Frontend**:  
+   - HTML, CSS, JavaScript
+   - Blade templating engine (Laravel)
+   - Bootstrap for UI components (optional)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Backend**:  
+   - **Laravel** (PHP framework)
+   - Authentication via Laravel’s built-in auth scaffolding
+   - QR code generation libraries (e.g., `SimpleQrcode` for Laravel)
+   - Database: **PostgreSQL** (or MySQL, depending on your preference)
 
-## Contributing
+- **Version Control**:  
+   - **Git** for version control
+   - Hosted on **GitHub** or another version control platform
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Target Audience
+This application is primarily designed for educational institutions, including:
+- Schools and universities that require a streamlined attendance tracking system.
+- Instructors who need an automated and easy-to-use tool to track student attendance.
+- Students who want an efficient way to mark and track their attendance.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Conclusion
+This project will provide an opportunity to work with Laravel's **authentication system**, **QR code generation**, and **database management**, offering a well-rounded experience for Laravel developers.
